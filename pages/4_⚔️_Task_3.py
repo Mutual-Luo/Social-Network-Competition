@@ -2,6 +2,7 @@ import streamlit as st
 import time
 import io
 import numpy as np
+import pandas as pd
 
 st.set_page_config(page_title="Task 3: Multimodal Intention Recognition for Social Media", page_icon="⚔️")
 
@@ -11,6 +12,7 @@ st.write(
 )
 st.write(
 """
+The competition focuses on a challenging text generation task: multimodal intention recognition. 
 The multimodal intention recognition task aims to recognize the underlying intent (e.g., informational, emotional, promotional) behind multi-modal social media content (e.g., text-image pairs). 
 Recognizing the intention behind multimodal social media content facilitates a deeper understanding of user behavior and preferences, and accurately grasp the motives behind user posts, thereby deepening our understanding of user behavior.  
 """
@@ -38,16 +40,22 @@ st.write(
 """
 **Dataset Description:** The dataset comprises two files and a floder:  `train.json`, `test.json` and `image`. 
 
-Each instance in the `train.txt` and `test.json` is represented as a dictionary, describing a tweet.
+Each instance in the `train.txt` and `test.json` is represented as a dictionary, delineating the attributes of an individual tweet..
 The dictionary includes the following fields, each with its corresponding meanings:
 """
 )
 dataset_description = [
-    ['intention_labels', ' This field represents the edges of the cascade network, denoting the Weibo share interactions. It is structured as a 2D array with a shape of `[2, edge_num]`, where `edge_num` signifies the number of interactions within the cascade.'],
-    ['x', 'The tweet image file, according to this name, you can find the image the `image` floder'],
-    ['text', 'This field indicates the label of the event class associated with the cascade network. It serves as the ground truth for classification tasks, distinguishing between bursty events and normal events.']
+    ['intention_labels', 'This field contains a list of labels. if `intention_labels[3]` equals 1, it signifies that `Intention 3` is the ground truth for the intention of this tweet.'],
+    ['image', 'This field denotes the file of the tweet image. Correspondingly, the image file can be located in the `image` folder based on this provided name.'],
+    ['text', ' This field encompasses the textual content of the tweet.'],
+    ['intentions', 'A dictionary comprising entries from `Intention 1` to `Intention 10`'],
 ]
-
+columns = ['Field', 'Meaning']
+dataset_description = pd.DataFrame(dataset_description, columns=columns)
+# st.table(dataset_description)
+st.markdown(dataset_description.style.hide(axis="index").to_html(), unsafe_allow_html=True)
+st.markdown("""
+""")
 
 
 st.write(
@@ -69,7 +77,16 @@ Each submission must be compressed into a `.zip` file uniquely identified by the
 
 The `source_code` folder should encompass all necessary source code and saved models. It must include an executable `evaluation.py` file capable of testing the provided data in `test.json` and generating the corresponding `result.json` file.
 
-The `result.json` file should consist of a list of predictions, aligned with the order of data in `test.json`, formatted as `[0, 1, 0, 1, 0, ..., 1, 0, 0]`.
+The `result.json` file should be structed as a list of dictionaries, each containing generative intentions aligned with the order of data in `test.json`. 
+In cases where the value at position `i` in the `intention_labels` list is `0`, the corresponding `Intention i`  is represented as an empty string. 
+The format of the file is as follows:
+```
+[
+{"Intention 1": "", "Intention 2": "This is Intention 2", ...},
+{"Intention 1": "hello1", "Intention 2": "This is not Intention 2", ...},
+...
+]
+```
 
 The specified directory structure for the submitted file is as follows:
 ```

@@ -32,7 +32,8 @@ st.write(
 """
 **Dataset Description:** The dataset comprises two files `train.json` and `test.json`. 
 The `test.json` file does not contain labels.
-Each instance in the dataset is represented as a dictionary, describing a cascade network. The dictionary includes the following fields, each with its corresponding meanings:
+Each instance in the dataset is represented as a dictionary, describing a cascade network. 
+The dictionary includes the following fields, each with its corresponding meanings:
 """
 )
 dataset_description = [
