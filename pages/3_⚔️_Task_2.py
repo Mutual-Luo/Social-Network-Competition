@@ -37,10 +37,9 @@ The dictionary includes the following fields, each with its corresponding meanin
 """
 )
 dataset_description = [
-    ['intention_labels', ' This field represents the edges of the cascade network, denoting the Weibo share interactions. It is structured as a 2D array with a shape of `[2, edge_num]`, where `edge_num` signifies the number of interactions within the cascade.'],
-    ['image', 'This field contains the feature embeddings of each Weibo post in the cascade network. These embeddings represent the content of the Weibo posts processed by BERT, a language model known for its contextual representation learning.'],
+    ['edge_index', ' This field represents the edges of the cascade network, denoting the Weibo share interactions. It is structured as a 2D array with a shape of `[2, edge_num]`, where `edge_num` signifies the number of interactions within the cascade.'],
+    ['x', 'This field contains the feature embeddings of each Weibo post in the cascade network. These embeddings represent the content of the Weibo posts processed by BERT, a language model known for its contextual representation learning.'],
     ['label', 'This field indicates the label of the event class associated with the cascade network. It serves as the ground truth for classification tasks, distinguishing between bursty events and normal events.'],
-    ['intentions', '']
 ]
 columns = ['Field', 'Meaning']
 dataset_description = pd.DataFrame(dataset_description, columns=columns)
