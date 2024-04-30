@@ -68,7 +68,7 @@ st.write(
 st.write(
 """
 There is no limit to the number of submissions per team. The final assessment will be based on the team's most recent submission, which will be publicly disclosed on the Leaderboard.
-Each submission must be compressed into a `.zip` file uniquely identified by the team's ID (e.g., `Ix9oW1.zip`). 
+Each submission must be compressed into a `.zip` file identified by the team's name (e.g., `Ix9oW1.zip`). 
 The zip file should contain a single folder named `source_code` and two files named `result.json` and `introduction.pdf`.
 
 * Result
