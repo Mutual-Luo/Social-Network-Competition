@@ -5,10 +5,11 @@ import pandas as pd
 import numpy as np
 
 st.set_page_config(page_title="Task 2: Bursty Event Cascade Classification", page_icon="⚔️")
+st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
 
-st.markdown("## ⚔️Task 2: Bursty Event Cascade Classification")
+st.markdown("### ⚔️Task 2: Bursty Event Cascade Classification")
 st.write(
-    "### Introduction"
+    "#### Introduction"
 )
 st.write(
     """
@@ -18,7 +19,7 @@ Efficient classification of bursty event cascade enables the early detection of 
 
 
 st.write(
-    "### Dataset"
+    "#### Dataset"
 )
 st.write(
 """
@@ -30,7 +31,7 @@ The dataset is labeled with the event class for each cascade network.
 Within the cascade network, each node represents a Weibo post, while edges symbolize share interactions between posts.
 """)
 
-st.success("**Dataset Download:** https://juejin.cn/post/7268955025211342859#heading-8")
+st.success("**Dataset Download:** https://drive.google.com/drive/folders/1Pg9Hi6CM7xCsKqE341TfaQmoWmi31bqe?usp=sharing")
 st.write(
 """
 **Dataset Description:** The dataset comprises two files `train.json` and `test.json`. 
@@ -54,7 +55,7 @@ st.markdown("""
 
 
 st.write(
-    "### Metric"
+    "#### Metric"
 )
 st.write(
     """The evaluation metric is the F1 score, the harmonic mean of the precision and recall."""
@@ -62,7 +63,7 @@ st.write(
 
 
 st.write(
-    "### Submission Rules"
+    "#### Submission Rules"
 )
 st.write(
 """

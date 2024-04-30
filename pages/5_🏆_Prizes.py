@@ -3,10 +3,11 @@ import streamlit as st
 st.set_page_config(
     page_title="Prizes", page_icon="🏆"
 )
+st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
 
-st.write("## 🏆Prizes")
+st.write("### 🏆Prizes")
 
-st.write("### Prizes")
+st.write("#### Prizes")
 
 st.markdown("""
 We have carefully designed award categories for each task to recognize outstanding contributions and to incentivize innovation, creativity, and excellence in the field of social media behavior analysis. 
@@ -18,7 +19,7 @@ The awards are as follows:
 """)
 
 
-st.write("### Scoring")
+st.write("#### Scoring")
 
 st.markdown("""
 The evaluation of submissions for each award category is based on predefined criteria tailored to the objectives of the respective task. 

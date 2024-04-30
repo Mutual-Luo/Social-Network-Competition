@@ -4,8 +4,9 @@ import altair as alt
 from urllib.error import URLError
 
 st.set_page_config(page_title="Leaderboard", page_icon="📈")
+st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
 
-st.markdown("## 📈Leaderboard")
+st.markdown("### 📈Leaderboard")
 
 st.warning("The leaderboard will be refreshed weekly, with updates scheduled in Monday, Beijing Time (BJT). The next update is planned for May 6, 2024.")
 

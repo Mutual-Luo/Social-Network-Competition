@@ -4,10 +4,11 @@ import io
 import numpy as np
 
 st.set_page_config(page_title="Task 1: Retweet Network Link Prediction", page_icon="⚔️")
+st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
 
-st.markdown("## ⚔️Task 1: Retweet Network Link Prediction")
+st.markdown("### ⚔️Task 1: Retweet Network Link Prediction")
 st.write(
-    "### Introduction"
+    "#### Introduction"
 )
 st.write(
     """The retweet network link prediction task aims to predict the retweet behavior between users in the social network. 
@@ -16,17 +17,17 @@ By predicting the retweet behavior patterns, insights can be gained into the mec
 
 
 st.write(
-    "### Dataset"
+    "#### Dataset"
 )
 st.write(
 """
 For the challenge, we collect a retweet dataset from Weibo, which contains the retweet network of 1,563,421 users. 
-In the retweet network, each node represents a user, and edges represent retweet relationships between users. 
+In the retweet network, each node represents a user, and edges represent retweet relationships between users. ~
 The weight of an edge signifies the number of times one user has retweeted content from another user. 
 """)
 
 
-st.success("**Dataset Download:** https://juejin.cn/post/7268955025211342859#heading-8")
+st.success("**Dataset Download:** https://drive.google.com/drive/folders/1WdJqk8qsD7oVfk-JQ7Xc6fl3rRXCndkI?usp=drive_link")
 st.write(
 """
 **Dataset Description:** The dataset comprises two files:  `train.txt` and `test.txt`. 
@@ -64,7 +65,7 @@ Notably, all the relationships listed in `test.txt` have been removed from the t
 )
 
 st.write(
-    "### Metric"
+    "#### Metric"
 )
 st.write(
     """The evaluation metric is the F1 score, the harmonic mean of the precision and recall. """
@@ -72,7 +73,7 @@ st.write(
 
 
 st.write(
-    "### Submission"
+    "#### Submission"
 )
 st.write(
 """

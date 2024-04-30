@@ -5,10 +5,11 @@ import numpy as np
 import pandas as pd
 
 st.set_page_config(page_title="Task 3: Multimodal Intention Recognition for Social Media", page_icon="⚔️")
+st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
 
-st.markdown("## ⚔️Task 3: Multimodal Intention Recognition for Social Media")
+st.markdown("### ⚔️Task 3: Multimodal Intention Recognition for Social Media")
 st.write(
-    "### Introduction"
+    "#### Introduction"
 )
 st.write(
 """
@@ -20,7 +21,7 @@ Recognizing the intention behind multimodal social media content facilitates a d
 
 
 st.write(
-    "### Dataset"
+    "#### Dataset"
 )
 st.write(
 """
@@ -36,7 +37,7 @@ Each intention is annotated with Label Studio where five annotators evaluate gen
 """)
 
 
-st.success("**Dataset Download:** https://juejin.cn/post/7268955025211342859#heading-8")
+st.success("**Dataset Download:** https://drive.google.com/drive/folders/1I9qtG74-9dxNS8iKxHzDPe8hb_wSK38u?usp=sharing")
 st.write(
 """
 **Dataset Description:** The dataset comprises two files and a floder:  `train.json`, `test.json` and `image`. 
@@ -61,7 +62,7 @@ st.markdown("""
 
 
 st.write(
-    "### Metric"
+    "#### Metric"
 )
 st.write(
 """The evaluation metric is the average BERT score(reported as percentages) for the 10 different aspects of the generated intentions."""
@@ -69,7 +70,7 @@ st.write(
 
 
 st.write(
-    "### Submission"
+    "#### Submission"
 )
 st.write(
 """
