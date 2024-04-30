@@ -57,7 +57,7 @@ The `test.txt` file follows this format:
 ```
 Each line represents a pair of users for which a retweet relationship needs to be predicted.
 The line contains two values: the source node ID and the target node ID, representing the users involved in the potential retweet relationship.
-If the predicted output is `1`, , it indicates the presence of a retweet relationship between the two users.
+If the predicted output is `1`, it indicates the presence of a retweet relationship between the two users.
 Conversely, if the predicted output is `0`, it signifies the absence of a retweet relationship between the two users.
 Notably, all the relationships listed in `test.txt` have been removed from the training data `train.txt`, ensuring that predictions are made for unseen relationships.
 """
@@ -77,20 +77,37 @@ st.write(
 st.write(
 """
 There is no limit to the number of submissions per team. The final assessment will be based on the team's most recent submission, which will be publicly disclosed on the Leaderboard.
+Each submission must be compressed into a `.zip` file uniquely identified by the team's ID (e.g., `Ix9oW1.zip`). 
+The zip file should contain a single folder named `source_code` and two files named `result.json` and `introduction.pdf`.
 
-Each submission must be compressed into a `.zip` file uniquely identified by the team's ID (e.g., `Ix9oW1.zip`). The zip file should contain a single folder named `source_code` and one file named `result.json`.
+* Result
+
+The `result.json` file should consist of a list of predictions, aligned with the order of data in `test.json`. 
+The example format of the `result.json` file is as follows:
+```
+[0, 1, 0, 1, 0, ..., 1, 0, 0]
+```
+
+* Source Code
 
 The `source_code` folder should encompass all necessary source code and saved models. It must include an executable `evaluation.py` file capable of testing the provided data in `test.json` and generating the corresponding `result.json` file.
+During evaluation, the provided `test.json` file will be placed within the `source_code` directory alongside the `evaluation.py` file.
+Therefore, participants need not include any additional data files in their submissions.
 
-The `result.json` file should consist of a list of predictions, aligned with the order of data in `test.json`, formatted as `[0, 1, 0, 1, 0, ..., 1, 0, 0]`.
+* Model Introduction
 
-The specified directory structure for the submitted file is as follows:
+In the `introduction.pdf` file, participants are expected to present a detailed overview of their method. 
+This introduction should offer insights into the innovative aspects of their approach, enabling better evaluation by the judges.
+The innovation of the method will contribute to 20\% of the total score.
+
+* The specified directory structure for the submitted file is as follows:
 ```
 {team_id}.zip
     - source_code
         - evaluation.py
         - ...
     - result.json
+    - introduction.pdf
 ```
 """
 )

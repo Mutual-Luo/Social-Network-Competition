@@ -24,7 +24,8 @@ st.write(
 )
 st.write(
 """
-For the challenge, we collected a mutlimodal social intention dataset containing 979 twitter anotated with 7868 intentions. 
+For the challenge, we collected a mutlimodal social intention dataset containing 979 Twitter posts anotated with 7868 intentions. 
+Specifically, the dataset is partitioned into 881 Twitter posts for training and 98 Twitter posts for testing. 
 The intentions include nine different types of intentions extracted from ATOMIC and one open-domain intention. 
 Specifically, nine ATOMIC-extracted intentions include ''xNeed'' (user's need), ''xIntent'' (user's intention), ''xAttr'' (user's attribute), 
 ''xEffect'' (effect of user's action), ''xReact'' (user's reaction), ''xWant'' (user's desire), ''oEffect'' (impact on others), 
@@ -39,6 +40,7 @@ st.success("**Dataset Download:** https://juejin.cn/post/7268955025211342859#hea
 st.write(
 """
 **Dataset Description:** The dataset comprises two files and a floder:  `train.json`, `test.json` and `image`. 
+The `test.json` file does not contain `intentions`. Participants are required to generate intentions for the test instances based on the provided text and image data.
 
 Each instance in the `train.txt` and `test.json` is represented as a dictionary, delineating the attributes of an individual tweet..
 The dictionary includes the following fields, each with its corresponding meanings:
@@ -72,29 +74,50 @@ st.write(
 st.write(
 """
 There is no limit to the number of submissions per team. The final assessment will be based on the team's most recent submission, which will be publicly disclosed on the Leaderboard.
+Each submission must be packaged into a `.zip` file uniquely identified by the team's ID (e.g., `Ix9oW1.zip`). 
+The zip file should contain a single folder named `source_code` and two files named `result.json` and `introduction.pdf`.
 
-Each submission must be compressed into a `.zip` file uniquely identified by the team's ID (e.g., `Ix9oW1.zip`). The zip file should contain a single folder named `source_code` and one file named `result.json`.
+* Result
 
-The `source_code` folder should encompass all necessary source code and saved models. It must include an executable `evaluation.py` file capable of testing the provided data in `test.json` and generating the corresponding `result.json` file.
-
-The `result.json` file should be structed as a list of dictionaries, each containing generative intentions aligned with the order of data in `test.json`. 
+The `result.json` file should be structed as a list of dictionaries, aligned with the order of data in `test.json`. 
+Each dictionary corresponds to a tweet and contains all generative intentions for that tweet. 
 In cases where the value at position `i` in the `intention_labels` list is `0`, the corresponding `Intention i`  is represented as an empty string. 
-The format of the file is as follows:
+The example format of the `result.json` file is as follows:
 ```
 [
-{"Intention 1": "", "Intention 2": "This is Intention 2", ...},
-{"Intention 1": "hello1", "Intention 2": "This is not Intention 2", ...},
-...
+    {
+        "Intention 1": "", 
+        "Intention 2": "This is Intention 2", 
+        ...
+    },
+    {   "Intention 1": "hello1", 
+        "Intention 2": "This is not Intention 2", 
+        ...
+    },
+    ...
 ]
 ```
 
-The specified directory structure for the submitted file is as follows:
+* Source Code
+
+The `source_code` folder should encompass all necessary source code and saved models. It must include an executable `evaluation.py` file capable of testing the provided data in `test.json` and generating the corresponding `result.json` file.
+During evaluation, the provided `test.json` file will be placed within the `source_code` directory alongside the `evaluation.py` file.
+Therefore, participants need not include any additional data files in their submissions.
+
+* Model Introduction
+
+In the `introduction.pdf` file, participants are expected to present a detailed overview of their method. 
+This introduction should offer insights into the innovative aspects of their approach, enabling better evaluation by the judges.
+The innovation of the method will contribute to 20\% of the total score.
+
+* The specified directory structure for the submitted file is as follows:
 ```
 {team_id}.zip
     - source_code
         - evaluation.py
         - ...
     - result.json
+    - introduction.pdf
 ```
 """
 )

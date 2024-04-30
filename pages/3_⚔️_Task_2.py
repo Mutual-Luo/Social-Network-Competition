@@ -22,9 +22,12 @@ st.write(
 )
 st.write(
 """
-For the bursty event cascade classification challenge, we collect a dataset from Weibo with 6,886 cascades of bursty events and 13,762 cascades of normal events. 
+For the bursty event cascade classification challenge, we collect a dataset from Weibo comprising a total of 15,110 cascades. 
+This dataset encompasses 6,346 cascades representing bursty events and 8,764 cascades representing normal events.
+Specifically, the dataset is partitioned into 13,599 cascades for training and 1,511 cascades for testing. 
 The dataset comprises posts made during the event, along with interactions such as shares, forming a cascade network.
 The dataset is labeled with the event class for each cascade network.
+Within the cascade network, each node represents a Weibo post, while edges symbolize share interactions between posts.
 """)
 
 st.success("**Dataset Download:** https://juejin.cn/post/7268955025211342859#heading-8")
@@ -64,20 +67,39 @@ st.write(
 st.write(
 """
 There is no limit to the number of submissions per team. The final assessment will be based on the team's most recent submission, which will be publicly disclosed on the Leaderboard.
+Each submission must be compressed into a `.zip` file uniquely identified by the team's ID (e.g., `Ix9oW1.zip`). 
+The zip file should contain a single folder named `source_code` and two files named `result.json` and `introduction.pdf`.
 
-Each submission must be compressed into a `.zip` file uniquely identified by the team's ID (e.g., `Ix9oW1.zip`). The zip file should contain a single folder named `source_code` and one file named `result.json`.
+* Result
+
+The `result.json` file should consist of a list of predictions, aligned with the order of data in `test.json`. 
+The example format of the `result.json` file is as follows:
+```
+[0, 1, 0, 1, 0, ..., 1, 0, 0]
+```
+
+* Source Code
 
 The `source_code` folder should encompass all necessary source code and saved models. It must include an executable `evaluation.py` file capable of testing the provided data in `test.json` and generating the corresponding `result.json` file.
+During evaluation, the provided `test.json` file will be placed within the `source_code` directory alongside the `evaluation.py` file.
+Therefore, participants need not include any additional data files in their submissions.
 
-The `result.json` file should consist of a list of predictions, aligned with the order of data in `test.json`, formatted as `[0, 1, 0, 1, 0, ..., 1, 0, 0]`.
 
-The specified directory structure for the submitted file is as follows:
+* Model Introduction
+
+In the `introduction.pdf` file, participants are expected to present a detailed overview of their method. 
+This introduction should offer insights into the innovative aspects of their approach, enabling better evaluation by the judges.
+The innovation of the method will contribute to 20\% of the total score.
+
+
+* The specified directory structure for the submitted file is as follows:
 ```
 {team_id}.zip
     - source_code
         - evaluation.py
         - ...
     - result.json
+    - introduction.pdf
 ```
 """
 )
