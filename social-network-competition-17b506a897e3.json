@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "social-network-competition",
+  "private_key_id": "17b506a897e3ead277bef6055c625c9c3f202d72",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC14RHax3vop3XF\ndMzBmPQ1yU/qYppk+7AYBHsfqVLgYGbMe5ZYZXE4EwPS9CBYTR8AoQwNR1Mytubg\nP7IHDIOQCcITLxNtUgncgQP7va1ezB8QYtQQDENQirifndpkMUoCUQs5lQkOnm80\nJOL7UR0NEu4Wk0qYdLLPJfdHk6eOqXek8NdlVSWqVEqRhuLiFimbttCv3ENpUiJI\nzC0hvfTX/CeMQzT1TviteIaHqAS5Ww4EDzvKBvTpX1jK2jl5lmbJbPS9++JmE1ff\nPwH6cgLecuXYEOvWhokGh2+u8+k7AESxfVS7OJYyBFeitKoGT4vPyECUz45xRuun\nWwsOoR6DAgMBAAECggEAVSw1wskJTz3gqpvUaVL6BhgkqwQK/oBZCh5LFFwkefvb\nGCZGFVZIC3ToJQl6/i77dj102eENZqH9g4WAlsl28OSI9JfmlprFEHSAi4rbXhnj\n8DX/zhYYDecwp1ryU1o7qNMQGSKgb66lL/uYKg3lt2Imif7m/3ci51wFrYjJfkY1\n0Pz+t6pwPlFfaC6QzeEEckK0HylkNzUzBoYfueONxJtvgWuaYKVysK1lHl52sKBB\nkrzhfmfRG/PzVK/0On9fSsrK6ESSWxHbNC2Bes1yxD0Kt3+9YIyX7uAcilu8MwaQ\ntqxboALqlE3xM7KVAzBBqi4gf4PQAAbOs/98xWvpaQKBgQDyWrKyOAbGPXNmNH1q\n0oHw5Xx8T2GRSaesFkkQyz9pd2pCgZtrBabEopikbuqodWFTSc06aCGi/GFD5v5Y\nCBQ30WO43mJ7LlTuIqxOIDIOwqDcGWwz8rmcjLchL5mIF55EVAqkMQSCBL0TiAG/\n0Q1IoTB0RVIb666NfSPepKozSwKBgQDAHq6BbT3B7zcV333dPNYgwM/PxpGhn6oc\nA1UPasHcqHmJetqbIGr2Zy/+wmw7ZU3FXOKdtIOiac20IAsikrCGixSrDxHq+wii\n3b6tQqNeiMj3nDtI5tUy0IFBpMp2KzJKhqMQD9TXPMJ+Hf7aS2+shn3Z0XD/belb\nLzszOsSGqQKBgQCnRFHxDxod2Gu9Lp0hDQkB6mFwqpj8XYmMDBWBscWiVPjRzgIm\na1AehtozIxpyChGSGm260gPlKas34kXJHEpX+/yHq3Ts751Ofj/N7AqghVPglOtJ\nL01L7xK1pNSiSSrCnf56NBqYYgzdXhFXAkHYzudSWEXDX3ap0KThFWUi4QKBgQC8\nzGoJXuVV9FNZ92ulQufbACA4u5baEiIFrXCl2e/xfM8TP9wcnlr/EqCj50SdigxH\na+R3vrGtpfQ0k1jd/PHlBkClagXduhzekLOVaOtLN3jnfGz2U4Iokaa0b9FXF1Qw\n0ObmHei4LEmlzqxoscFo9jIvIBe/rK+qoFu5GIORIQKBgFfHG0IjXq6jVXrRKm4r\nDMUbCFPxSmiMS0xh/0bsip3uzSOXbiCgB76O6uLFtrR/JCdtvnsWgYWc/+Na5rdn\nXGzJjvsd8Ubjdug7Q7bHDlnFQeLA2+aDxxWmUS9qGNz2qZrMQ+RA3UQ3T+nfkl/X\nx5SYh0DFYRrfR0szpI9ktMPx\n-----END PRIVATE KEY-----\n",
+  "client_email": "competition@social-network-competition.iam.gserviceaccount.com",
+  "client_id": "103269870721910916585",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/competition%40social-network-competition.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

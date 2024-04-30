@@ -3,7 +3,7 @@ import markdown_it
 import streamlit as st
 import base64
 from PIL import Image
-
+# IEEE Big Data 2024: Characterizing User Behavior in Social Networks: Propagation, Prediction, and Sensemaking
 st.set_page_config(
     page_title="Characterizing User Behavior in Social Networks: Propagation, Prediction, and Sensemaking", page_icon="⭐"
 )
@@ -84,3 +84,14 @@ This process necessitates not only an understanding of visual and linguistic inf
 
 # if st.markdown("Go to Timeline"):
 #     st.switch_page("pages/1_📅_Timeline.py")
+
+
+st.write(
+    "#### Contact"
+)
+st.markdown(
+"""
+If you encounter any issues or have questions regarding the competition, please contact us at luojy@act.buaa.edu.cn.
+Your feedback and inquiries are greatly valued, and we will strive to address them promptly and effectively.
+"""
+)

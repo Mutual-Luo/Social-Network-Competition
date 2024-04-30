@@ -37,7 +37,7 @@ Each intention is annotated with Label Studio where five annotators evaluate gen
 """)
 
 
-st.success("**Dataset Download:** https://drive.google.com/drive/folders/1I9qtG74-9dxNS8iKxHzDPe8hb_wSK38u?usp=sharing")
+st.success("**Dataset Download:** [Link](https://drive.google.com/drive/folders/1I9qtG74-9dxNS8iKxHzDPe8hb_wSK38u?usp=sharing)")
 st.write(
 """
 **Dataset Description:** The dataset comprises two files and a floder:  `train.json`, `test.json` and `image`. 
@@ -122,25 +122,36 @@ The innovation of the method will contribute to 20\% of the total score.
 ```
 """
 )
-
 st.markdown("---")
+st.write(
+    "#### Submission Method"
+)
 st.warning("Only submissions that fully comply with the provided submission rules will be accepted for evaluation.")
-uploaded_file = st.file_uploader("Submit a `.zip` file named only after the team ID.")
-submit_button = st.button("Submit")
-if submit_button:
-    # Check if a file has been uploaded
-    if uploaded_file is not None:
-        # Display a message indicating file upload in progress
-        st.info(f"You selected '{uploaded_file.name}'. File upload in progress. Please wait...")
+st.markdown(
+"""
+Upload your submission files to a secure and accessible platform such as Google Drive or another suitable file hosting service. 
+Once your files are uploaded, generate shareable link. Ensure that these links are set to allow download access. 
+In the submission form provided, enter the generated download links for your files. 
+""")
+st.success("Submission Form: [Link](https://docs.google.com/forms/d/e/1FAIpQLSd0f76YEuJXf2mswHudrc5wpVgzZonbPEAHfiJBqLagdelQEg/viewform?usp=sf_link)")
+# st.markdown("---")
+# st.warning("Only submissions that fully comply with the provided submission rules will be accepted for evaluation.")
+# uploaded_file = st.file_uploader("Submit a `.zip` file named only after the team ID.")
+# submit_button = st.button("Submit")
+# if submit_button:
+#     # Check if a file has been uploaded
+#     if uploaded_file is not None:
+#         # Display a message indicating file upload in progress
+#         st.info(f"You selected '{uploaded_file.name}'. File upload in progress. Please wait...")
 
-        # Process the uploaded file
-        file_contents = uploaded_file.getvalue()
-        file_obj = io.BytesIO(file_contents)
-        with open(uploaded_file.name, "wb") as f:
-            f.write(file_contents)
-        file_path = f.name
+#         # Process the uploaded file
+#         file_contents = uploaded_file.getvalue()
+#         file_obj = io.BytesIO(file_contents)
+#         with open(uploaded_file.name, "wb") as f:
+#             f.write(file_contents)
+#         file_path = f.name
 
-        # Display a success message indicating file upload is complete
-        st.success("File upload complete!")
-    else:
-        st.error("Please upload a file before submitting.")
+#         # Display a success message indicating file upload is complete
+#         st.success("File upload complete!")
+#     else:
+#         st.error("Please upload a file before submitting.")
