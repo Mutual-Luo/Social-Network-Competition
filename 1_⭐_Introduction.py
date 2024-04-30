@@ -71,7 +71,6 @@ The proposed challenge traverses multiple disciplines, including sociology, cybe
 This challenge aims to foster advancements in characterizing user behavior in social networks by addressing three pivotal tasks:
 """
 )
-page_path = "./pages/2_⚔️_Task_1.py"
 st.markdown(
 """
 * *[Retweet network link prediction](Task_1)*: This task is centered around predicting the likelihood of retweet behavior between users in a social network. By accurately forecasting retweet connections, we aim to gain insights into information diffusion dynamics and user engagement patterns on social media platforms.
@@ -83,10 +82,5 @@ This process necessitates not only an understanding of visual and linguistic inf
 """, unsafe_allow_html=True)
 
 
-pages = {
-    "Introduction": "introduction",
-    "Task 1": "2_⚔️_Task_1",
-    "Task 2": "task2"
-}
 # if st.markdown("Go to Timeline"):
 #     st.switch_page("pages/1_📅_Timeline.py")
