@@ -120,9 +120,9 @@ st.write(
 st.warning("Only submissions that fully comply with the provided submission rules will be accepted for evaluation.")
 st.markdown(
 """
-Upload your submission files to a secure and accessible platform such as Google Drive or another suitable file hosting service. 
-Once your files are uploaded, generate shareable link. Ensure that these links are set to allow download access. 
-In the submission form provided, enter the generated download links for your files. 
+Please upload your submission files to a secure and accessible platform, such as Google Drive or another suitable file hosting service. 
+Once your files are uploaded, generate a shareable link. Ensure that this link allows download access. 
+In the submission form provided, enter the generated download link for your files. 
 """)
 st.success("Submission Form: [Link](https://docs.google.com/forms/d/16xAcjOdf6BNz8V0hH-M59mNMq5_tF0rXDXBHW7a8bGM/edit)")
 # uploaded_file = st.file_uploader("Submit a `.zip` file named only after the team ID.")
