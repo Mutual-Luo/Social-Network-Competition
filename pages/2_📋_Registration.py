@@ -1,13 +1,12 @@
 import streamlit as st
-import csv
-import secrets
-import string
-import io
-from googleapiclient.discovery import build
+# import csv
+# import secrets
+# import string
+# import io
 
-def generate_team_id(length=6):
-    alphabet = string.ascii_uppercase + string.digits
-    return ''.join(secrets.choice(alphabet) for _ in range(length))
+# def generate_team_id(length=6):
+#     alphabet = string.ascii_uppercase + string.digits
+#     return ''.join(secrets.choice(alphabet) for _ in range(length))
 
 st.set_page_config(page_title="Registration", page_icon="📋")
 st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
