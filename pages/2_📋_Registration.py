@@ -20,7 +20,7 @@ Each team consists of at least one captain and up to five other members.
 """
 )
 
-st.success("Please complete the registration form: [Link](https://docs.google.com/forms/d/e/1FAIpQLScfrY1fvHLOswdSFS66bvO7dasbayiGSlTRE2fxTDZvJ6W_sA/viewform?usp=sf_link)")
+st.success("Please complete the registration form: [Link](https://forms.gle/y2qpcGmNvvNRDLEZ8)")
 
 
 # def write_to_csv(data):
