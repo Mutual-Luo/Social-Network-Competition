@@ -124,7 +124,7 @@ Please upload your submission files to a secure and accessible platform, such as
 Once your files are uploaded, generate a shareable link. Ensure that this link allows download access. 
 In the submission form provided, enter the generated download link for your files. 
 """)
-st.success("Submission Form: [Link](https://docs.google.com/forms/d/16xAcjOdf6BNz8V0hH-M59mNMq5_tF0rXDXBHW7a8bGM/edit)")
+st.success("Submission Form: [Link](https://forms.gle/AGUkgCRicPhd1BH29)")
 # uploaded_file = st.file_uploader("Submit a `.zip` file named only after the team ID.")
 # submit_button = st.button("Submit")
 # if submit_button:
