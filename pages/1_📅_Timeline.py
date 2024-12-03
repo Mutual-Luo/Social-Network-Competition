@@ -11,6 +11,6 @@ st.markdown(
 """
 * Step 1 - Data Release, Platform setup and solicitation of challenge participants, May 1, 2024
 * Step 2 - Deadline for contest teams to submit final solutions, (~~November 21~~)December 2, 2024
-* Step 3 - Announcement of winning teams, (~~Nov 30~~)Dec 6, 2024
+* Step 3 - Announcement of winning teams, (~~Nov 30~~)Dec 8, 2024
 """
 )
