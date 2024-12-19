@@ -8,7 +8,7 @@ st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
 
 st.markdown("### 📈Leaderboard")
 
-st.warning("The leaderboard will be refreshed weekly, with updates scheduled in Monday, Beijing Time (BJT). The next update is planned for May 6, 2024.")
+st.warning("The results of the competition are as follows:")
 
 st.markdown("#### Task 1: Retweet Network Link Prediction")
 leaderbord1 =  pd.read_csv("./table/leaderbord1.csv")
