@@ -4,11 +4,11 @@ import altair as alt
 from urllib.error import URLError
 
 st.set_page_config(page_title="Leaderboard", page_icon="📈")
-st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
+st.sidebar.image('./imgs/lefttop_logo1.png', use_container_width=True)
 
-st.markdown("### 📈Leaderboard")
+st.markdown("### 📈List of Award-winning Teams")
 
-st.warning("The results of the competition are as follows:")
+st.success("Congratulations to the following teams for winning awards in this competition!!!")
 
 st.markdown("#### Task 1: Retweet Network Link Prediction")
 leaderbord1 =  pd.read_csv("./table/leaderbord1.csv")
