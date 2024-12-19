@@ -1,1 +1,4 @@
-Ranking,Team Name,Score
+Rank,Team's Name,Leader's Affiliation,Bert Score(F1),Leader's name,Other team members' name
+1,New Media Multimodal,Tianjin University,82.87,Xiaoxu Ma,"Tao Yin, Hua Huang, Zhixia He"
+2,What,Beihang University,81.97,Zhixin Cai,"Shiqi Gao, Yangyifei Luo"
+3,Weft1,China Electric Power Research Institute,79.61,Songbo Chuan,"Fanxiao Xuan,  Jiaquan Ye, Xin Rui, Zhi Zhang"
