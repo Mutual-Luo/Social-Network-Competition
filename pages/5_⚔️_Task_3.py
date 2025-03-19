@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 st.set_page_config(page_title="Task 3: Multimodal Intention Recognition for Social Media", page_icon="⚔️")
-st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
+st.sidebar.image('./imgs/lefttop_logo1.png', use_container_width=True)
 
 st.markdown("### ⚔️Task 3: Multimodal Intention Recognition for Social Media")
 st.write(
