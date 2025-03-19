@@ -58,7 +58,7 @@ st.markdown("""
 st.write("### ⭐Characterizing User Behavior in Social Networks: Propagation, Prediction, and Sensemaking")
 
 
-st.image('./imgs/background.jpg', use_column_width=True)
+st.image('./imgs/background.jpg', use_container_width=True)
 
 # st.sidebar.success("在上方选择一个演示。")
 
