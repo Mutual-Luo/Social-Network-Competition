@@ -9,7 +9,7 @@ import streamlit as st
 #     return ''.join(secrets.choice(alphabet) for _ in range(length))
 
 st.set_page_config(page_title="Registration", page_icon="📋")
-st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
+st.sidebar.image('./imgs/lefttop_logo1.png', use_container_width=True)
 st.markdown("### 📋Registration")
 
 
