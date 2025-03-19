@@ -1,5 +1,5 @@
 import select
-import markdown_it
+# import markdown_it
 import streamlit as st
 import base64
 from PIL import Image
