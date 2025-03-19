@@ -10,7 +10,7 @@ st.set_page_config(
     page_title="Characterizing User Behavior in Social Networks: Propagation, Prediction, and Sensemaking", page_icon="⭐"
 )
 
-st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
+st.sidebar.image('./imgs/lefttop_logo1.png', use_container_width=True)
 
 # st.markdown("""
 # <style>
