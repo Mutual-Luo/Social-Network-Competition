@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 st.set_page_config(page_title="Task 2: Bursty Event Cascade Classification", page_icon="⚔️")
-st.sidebar.image('./imgs/lefttop_logo1.png', use_column_width=True)
+st.sidebar.image('./imgs/lefttop_logo1.png', use_container_width=True)
 
 st.markdown("### ⚔️Task 2: Bursty Event Cascade Classification")
 st.write(
