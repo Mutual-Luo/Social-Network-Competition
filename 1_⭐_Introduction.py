@@ -1,5 +1,7 @@
 import select
 # import markdown_it
+import warnings
+warnings.filterwarnings("ignore")
 import streamlit as st
 import base64
 from PIL import Image
